@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>الملف الشخصي</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero-wrap-2 {
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 400px;
+    }
+    
+    /* Custom CSS for Shop Page */
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-card figure img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .product-card .p-4 {
+      padding: 20px;
+    }
+
+    .product-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      margin-bottom: 10px;
+    }
+
+    /* Button styles */
+    .btn-add-to-cart {
+      background-color: #1d3557;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-add-to-cart:hover {
+      background-color: #457b9d;
+      color: white;
+    }
+
+    .btn-cart {
+      background-color: #3964e6;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .btn-cart:hover {
+      background-color: #12120f;
+      color: white;
+    }
+
+    /* Filter styles */
+    .filter-section h6 {
+      font-weight: bold;
+      color: #1d3557;
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .pagination li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    .pagination li a {
+      color: #0275d8;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 10px 15px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .pagination li.active a {
+      background-color: #0275d8;
+      color: #fff;
+      border-color: #0275d8;
+    }
+
+    .pagination li a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .site-section {
+      padding: 50px 0;
+    }
+
+    .breadcrumb-section {
+      margin-bottom: 40px;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="Index2.html">بذرة <span>حب</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span> قائمة
+          </button>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">الصفحة الرئيسية</a></li>
+                <li class="nav-item"><a href="shop2.html" class="nav-link">المتجر</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">الخدمات</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">الأخبار</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">عنا</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+       
+            
+            
+              
+              <!-- أيقونة الصفحة الشخصية -->
+              <li class="nav-item">
+                <a href="profile.html" class="nav-link">
+                  <span class="fa fa-user"></span> 
+                </a>
+              </li>
+              
+              <!-- أيقونة سلة المشتريات -->
+              <li class="nav-item">
+                <a href="cart.html" class="nav-link">
+                  <span class="fa fa-shopping-cart"></span> 
+                </a>
+              </li>
+      
+              <!-- زر تسجيل الخروج -->
+             
+            </ul>
+            <li class="nav-item">
+                <a href="index.html" class="btn btn-danger nav-link text-white" style="margin-left: 10px;">تسجيل الخروج</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    <!-- Hero Section -->
+     <!-- Hero Section -->
+  <section class="hero-wrap hero-wrap-2" style="background-image: url('images/motherwitholives.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-end">
+        <div class="col-md-9 ftco-animate pb-5">
+          <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">الصفحة الرئيسية <i class="fa fa-chevron-right"></i></a></span> <span>المتجر <i class="fa fa-chevron-right"></i></span></p>
+          <h1 class="mb-0 bread">المتجر</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <div class="site-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-9 order-2">
+          <div class="row mb-5">
+            <div class="col-md-12">
+              <div class="float-md-left">
+                <h2 class="text-black h5">تسوق جميع المنتجات</h2>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shop Products -->
+          <div class="row mb-5">
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="product-card">
+                <figure>
+                  <a href="productdetails.html"><img src="images/holder.jpg" alt="Baby Holder" class="img-fluid"></a>
+                </figure>
+                <div class="p-4">
+                  <h3><a href="productdetails.html">حامل الطفل</a></h3>
+                  <p class="mb-0">يحافظ على طفلك قريبًا وآمنًا.</p>
+                  <p class="text-primary font-weight-bold">$30</p>
+                  <a href="cart.html" class="btn-add-to-cart">إضافة إلى العربة</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="product-card">
+                <figure>
+                  <a href="shop-single.html"><img src="images/motherbag.jpg" alt="Mother Bag" class="img-fluid"></a>
+                </figure>
+                <div class="p-4">
+                  <h3><a href="shop-single.html">حقيبة الأم</a></h3>
+                  <p class="mb-0">خذ طفلك في أي مكان بسهولة.</p>
+                  <p class="text-primary font-weight-bold">$25</p>
+                  <a href="cart.html" class="btn-add-to-cart">إضافة إلى العربة</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="product-card">
+                <figure>
+                  <a href="shop-single.html"><img src="images/story1.jpg" alt="Baby Story" class="img-fluid"></a>
+                </figure>
+                <div class="p-4">
+                  <h3><a href="shop-single.html">قصة الأطفال</a></h3>
+                  <p class="mb-0">استمتع بقراءة قصص ممتعة لطفلك.</p>
+                  <p class="text-primary font-weight-bold">$15</p>
+                  <a href="cart.html" class="btn-add-to-cart">إضافة إلى العربة</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="product-card">
+                <figure>
+                  <a href="shop-single.html"><img src="images/towel.jpg" alt="Animal Hodded Towel" class="img-fluid"></a>
+                </figure>
+                <div class="p-4">
+                  <h3><a href="shop-single.html">منشفة مزينة برأس حيوان</a></h3>
+                  <p class="mb-0">مناشف لطيفة لطفلك.</p>
+                  <p class="text-primary font-weight-bold">$12</p>
+                  <a href="#" class="btn-add-to-cart">إضافة إلى العربة</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="product-card">
+                <figure>
+                  <a href="shop-single.html"><img src="images/feedingchair.jpg" alt="Feeding Chair" class="img-fluid"></a>
+                </figure>
+                <div class="p-4">
+                  <h3><a href="shop-single.html">كرسي الإطعام</a></h3>
+                  <p class="mb-0">قم بإطعام طفلك بسهولة وأمان.</p>
+                  <p class="text-primary font-weight-bold">$75</p>
+                  <a href="#" class="btn-add-to-cart">إضافة إلى العربة</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="product-card">
+                <figure>
+                  <a href="productdetails.html"><img src="images/feedingplate.jpg" alt="Feeding Plate" class="img-fluid"></a>
+                </figure>
+                <div class="p-4">
+                  <h3><a href="productdetails.html">طبق الإطعام</a></h3>
+                  <p class="mb-0">آمن على أسنان طفلك.</p>
+                  <p class="text-primary font-weight-bold">$9</p>
+                  <a href="#" class="btn-add-to-cart">إضافة إلى العربة</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional products can go here -->
+          </div>
+
+          <!-- Pagination -->
+          <div class="row" data-aos="fade-up">
+            <div class="col-md-12 text-center">
+              <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&lt;</span></a></li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&gt;</span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Go to Cart Button -->
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <a href="cart.html" class="btn-cart">الذهاب إلى عربة التسوق</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Sidebar -->
+        <div class="col-md-3 order-1 mb-5 mb-md-0">
+          <div class="border p-4 rounded mb-4">
+            <h3 class="mb-3 h6 text-uppercase text-black d-block">الفئات</h3>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-1"><a href="#" class="d-flex"><span>الألعاب</span> <span class="text-black ml-auto">(30)</span></a></li>
+              <li class="mb-1"><a href="#" class="d-flex"><span>القصص</span> <span class="text-black ml-auto">(12)</span></a></li>
+              <li class="mb-1"><a href="#" class="d-flex"><span>الأم</span> <span class="text-black ml-auto">(25)</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Filter by Type and Price -->
+          <div class="filter-section border p-4 rounded mb-4">
+            <h6>الفلترة حسب النوع</h6>
+            <form action="#">
+              <div class="form-group">
+                <label><input type="checkbox" name="type" value="ألعاب"> ألعاب</label><br>
+                <label><input type="checkbox" name="type" value="قصص"> قصص</label><br>
+                <label><input type="checkbox" name="type" value="الأم"> الأم</label>
+              </div>
+
+              <h6>الفلترة حسب السعر</h6>
+              <div class="form-group">
+                <label for="price-range">الحد الأقصى للسعر:</label>
+                <input type="range" id="price-range" name="price" min="0" max="100" value="50" step="5" oninput="this.nextElementSibling.value = this.value">
+                <output>50</output> $
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">تطبيق الفلاتر</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+			  <h2 class="footer-heading">بذرة حب</h2>
+			  <p>
+			   موقع الكتروني اردني لدعم صحة الأم والطفل .
+			  </p>
+			  <ul
+				class="ftco-footer-social list-unstyled float-md-left float-lft mt-4"
+			  >
+				<li class="ftco-animate">
+				  <a href="#"><span class="fa fa-twitter"></span></a>
+				</li>
+				<li class="ftco-animate">
+				  <a href="#"><span class="fa fa-facebook"></span></a>
+				</li>
+				<li class="ftco-animate">
+				  <a href="#"><span class="fa fa-instagram"></span></a>
+				</li>
+			  </ul>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+			  <h2 class="footer-heading">اخر الاخبار</h2>
+			  <div class="block-21 mb-4 d-flex">
+				<a
+				  class="img mr-4 rounded"
+				  style="background-image: url(images/image_1.jpg)"
+				></a>
+				<div class="text">
+				  <h3 class="heading">
+					<a href="#"
+					  >دور الرضاعة الطبيعية في تعزيز مناعة الطفل</a
+					>
+				  </h3>
+				  <div class="meta">
+					<div>
+					  <a href="#"
+						><span class="icon-calendar"></span> Mar. 04, 2024</a
+					  >
+					</div>
+					<div>
+					  <a href="#"><span class="icon-person"></span> Admin</a>
+					</div>
+					<div>
+					  <a href="#"><span class="icon-chat"></span> 19</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="block-21 mb-4 d-flex">
+				<a
+				  class="img mr-4 rounded"
+				  style="background-image: url(images/image_2.jpg)"
+				></a>
+				<div class="text">
+				  <h3 class="heading">
+					<a href="#"
+					  >سكر الحمل والوزن الزائد</a
+					>
+				  </h3>
+				  <div class="meta">
+					<div>
+					  <a href="#"
+						><span class="icon-calendar"></span> Mar. 04, 2020</a
+					  >
+					</div>
+					<div>
+					  <a href="#"><span class="icon-person"></span> Admin</a>
+					</div>
+					<div>
+					  <a href="#"><span class="icon-chat"></span> 19</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+			  <h2 class="footer-heading">روابط سريعة</h2>
+			  <ul class="list-unstyled">
+				<li><a href="#" class="py-1 d-block">الصفحة الرئيسية</a></li>
+				<li><a href="#" class="py-1 d-block">عنا</a></li>
+				<li><a href="#" class="py-1 d-block">الخدمات</a></li>
+				<li><a href="#" class="py-1 d-block">المتجر</a></li>
+				<li><a href="#" class="py-1 d-block">الاخبار والمقالات</a></li>
+				<li><a href="#" class="py-1 d-block">تواصل معنا</a></li>
+			  </ul>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+			  <h2 class="footer-heading">هل لديك أي سؤال؟</h2>
+			  <div class="block-23 mb-3">
+				<ul>
+				  <li>
+					<span class="icon fa fa-map-marker"></span
+					><span class="text"
+					  >
+					 </span
+					>
+				  </li>
+				  <li>
+					<a href="#"
+					  ><span class="icon fa fa-phone"></span
+					  ><span class="text">+2 392 3929 210</span></a
+					>
+				  </li>
+				  <li>
+					<a href="#"
+					  ><span class="icon fa fa-paper-plane"></span
+					  ><span class="text">info@yourdomain.com</span></a
+					>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		 
+	  </footer>
+  
+	  <!-- loader -->
+	  <div id="ftco-loader" class="show fullscreen">
+		<svg class="circular" width="48px" height="48px">
+		  <circle
+			class="path-bg"
+			cx="24"
+			cy="24"
+			r="22"
+			fill="none"
+			stroke-width="4"
+			stroke="#eeeeee"
+		  />
+		  <circle
+			class="path"
+			cx="24"
+			cy="24"
+			r="22"
+			fill="none"
+			stroke-width="4"
+			stroke-miterlimit="10"
+			stroke="#F96D00"
+		  />
+		</svg>
+	  </div>
+   <!-- FontAwesome CDN (ensure you have this in your <head> or <body>) -->
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	
+	  <script src="js/jquery.min.js"></script>
+	  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+	  <script src="js/popper.min.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	  <script src="js/jquery.easing.1.3.js"></script>
+	  <script src="js/jquery.waypoints.min.js"></script>
+	  <script src="js/jquery.stellar.min.js"></script>
+	  <script src="js/jquery.animateNumber.min.js"></script>
+	  <script src="js/owl.carousel.min.js"></script>
+	  <script src="js/jquery.magnific-popup.min.js"></script>
+	  <script src="js/scrollax.min.js"></script>
+	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+	  <script src="js/google-map.js"></script>
+	  <script src="js/main.js"></script>
+	</body>
+  
+	<!-- Mirrored from technext.github.io/cleaning-company/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Sep 2024 18:47:44 GMT -->
+  </html>
+  

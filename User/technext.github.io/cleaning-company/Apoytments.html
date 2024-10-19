@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>حجز موعد</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            font-family: 'Roboto', sans-serif;
+            padding: 30px 0;
+        }
+
+        .container {
+            max-width: 1000px;
+        }
+
+        .form-control {
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-color: #f96d00;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #f96d00;
+            border-color: #f96d00;
+            padding: 15px 30px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .btn-primary:hover {
+            background-color: #f75c00;
+            transform: translateY(-3px);
+        }
+
+        .btn-primary:active {
+            transform: translateY(1px);
+        }
+
+        .appointment-form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .appointment-form h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .appointment-form .form-control {
+            background-color: #f7f8fa;
+        }
+
+        /* Custom hover effect for inputs */
+        .form-control:hover {
+            background-color: #fdfdfd;
+        }
+
+        .hero-wrap {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/momandbabyborn.jpg') center center no-repeat;
+            background-size: cover;
+            height: 400px;
+        }
+
+        .hero-wrap .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-wrap h1.bread {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .hero-wrap p.breadcrumbs {
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        .hero-wrap .breadcrumbs a {
+            color: #f96d00;
+        }
+
+        /* Doctor search form */
+        .doctor-search-form input {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .doctor-search-form input:focus {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .doctor-list {
+            margin-top: 20px;
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        .doctor-list li {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Add hover effect to doctor list items */
+        .doctor-list li:hover {
+            background: #f0f0f0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="Index2.html">بذرة <span>حب</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> قائمة
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">الصفحة الرئيسية</a></li>
+                    <li class="nav-item"><a href="shop2.html" class="nav-link">المتجر</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">الخدمات</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">الأخبار</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">عنا</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+                
+                    <li class="nav-item">
+                        <a href="profile.html" class="nav-link">
+                        <span class="fa fa-user"></span> 
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link">
+                        <span class="fa fa-shopping-cart"></span> 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="btn btn-danger nav-link text-white" style="margin-left: 10px;">تسجيل الخروج</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/momandbabyborn.jpg');" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-end">
+                <div class="col-md-9 ftco-animate pb-5">
+                    <p class="breadcrumbs mb-2">
+                        <span class="mr-2"><a href="index.html">الصفحة الرئيسية <i class="fa fa-chevron-right"></i></a></span>
+                        <span>حجز موعد <i class="fa fa-chevron-right"></i></span>
+                    </p>
+                    <h1 class="mb-0 bread">حجز موعد</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment & Doctor Search Sections Side by Side -->
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row">
+                <!-- Appointment Form Section -->
+                <div class="col-md-6 ftco-animate">
+                    <form id="appointment-form" class="appointment-form">
+                        <h3 class="mb-4 billing-heading">تفاصيل الموعد</h3>
+                        <div class="row align-items-end">
+                            <div class="col-md-12 form-group">
+                                <label>المستخدم</label>
+                                <input type="number" class="form-control" id="userId" placeholder="رقم المستخدم" required>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label>الطبيب</label>
+                                <input type="number" class="form-control" id="doctorId" placeholder="رقم الطبيب" required>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label>تاريخ الموعد</label>
+                                <input type="date" class="form-control" id="appointmentDate" required>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label>نوع الموعد</label>
+                                <input type="text" class="form-control" id="appointmentType" placeholder="نوع الموعد" required>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label>ملاحظات</label>
+                                <textarea class="form-control" id="notes" rows="5" placeholder="أدخل الملاحظات"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block py-3 mt-4" id="submitAppointment">حجز موعد</button>
+                    </form>
+                </div>
+
+                <!-- Doctor Search Section -->
+                <div class="col-md-6 ftco-animate">
+                    <form id="doctor-search-form" class="form-group">
+                        <h3 class="mb-4 billing-heading">ابحث عن طبيب</h3>
+                        <input type="text" class="form-control" id="searchInput" placeholder="ابحث باسم الطبيب أو رقم الطبيب">
+                    </form>
+                    <ul class="doctor-list" id="doctorList">
+                        <!-- Doctor List will be dynamically generated here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer ftco-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+              <h2 class="footer-heading">بذرة حب</h2>
+              <p>
+               موقع الكتروني اردني لدعم صحة الأم والطفل .
+              </p>
+              <ul
+                class="ftco-footer-social list-unstyled float-md-left float-lft mt-4"
+              >
+                <li class="ftco-animate">
+                  <a href="#"><span class="fa fa-twitter"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="fa fa-facebook"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="fa fa-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+              <h2 class="footer-heading">اخر الاخبار</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a
+                  class="img mr-4 rounded"
+                  style="background-image: url(images/image_1.jpg)"
+                ></a>
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="#"
+                      >دور الرضاعة الطبيعية في تعزيز مناعة الطفل</a
+                    >
+                  </h3>
+                  <div class="meta">
+                    <div>
+                      <a href="#"
+                        ><span class="icon-calendar"></span> Mar. 04, 2024</a
+                      >
+                    </div>
+                    <div>
+                      <a href="#"><span class="icon-person"></span> Admin</a>
+                    </div>
+                    <div>
+                      <a href="#"><span class="icon-chat"></span> 19</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a
+                  class="img mr-4 rounded"
+                  style="background-image: url(images/image_2.jpg)"
+                ></a>
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="#"
+                      >سكر الحمل والوزن الزائد</a
+                    >
+                  </h3>
+                  <div class="meta">
+                    <div>
+                      <a href="#"
+                        ><span class="icon-calendar"></span> Mar. 04, 2020</a
+                      >
+                    </div>
+                    <div>
+                      <a href="#"><span class="icon-person"></span> Admin</a>
+                    </div>
+                    <div>
+                      <a href="#"><span class="icon-chat"></span> 19</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+              <h2 class="footer-heading">روابط سريعة</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block">الصفحة الرئيسية</a></li>
+                <li><a href="#" class="py-1 d-block">عنا</a></li>
+                <li><a href="#" class="py-1 d-block">الخدمات</a></li>
+                <li><a href="#" class="py-1 d-block">المتجر</a></li>
+                <li><a href="#" class="py-1 d-block">الاخبار والمقالات</a></li>
+                <li><a href="#" class="py-1 d-block">تواصل معنا</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+              <h2 class="footer-heading">هل لديك أي سؤال؟</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li>
+                    <span class="icon fa fa-map-marker"></span
+                    ><span class="text"
+                      >
+                     </span
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="icon fa fa-phone"></span
+                      ><span class="text">+2 392 3929 210</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="icon fa fa-paper-plane"></span
+                      ><span class="text">info@yourdomain.com</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         
+      </footer>
+  
+   <!-- Search and Doctor List Script -->
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        fetchDoctors();
+
+        // Fetch approved doctors from the API
+        async function fetchDoctors() {
+            try {
+                const response = await fetch('https://localhost:7123/api/Doctors/Approved');
+                const doctors = await response.json();
+                displayDoctors(doctors);
+            } catch (error) {
+                console.error('Error fetching doctors:', error);
+            }
+        }
+
+        // Display the list of doctors
+        function displayDoctors(doctors) {
+            const doctorList = document.getElementById('doctorList');
+            doctorList.innerHTML = ''; // Clear any previous list items
+
+            doctors.forEach(doctor => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `د. ${doctor.name} - رقم الطبيب: ${doctor.phoneNumber}`;
+                doctorList.appendChild(listItem);
+            });
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function (event) {
+            const searchQuery = event.target.value.toLowerCase();
+            const doctorListItems = document.querySelectorAll('#doctorList li');
+
+            doctorListItems.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(searchQuery)) {
+                    item.style.display = ''; // Show the item
+                } else {
+                    item.style.display = 'none'; // Hide the item
+                }
+            });
+        });
+    });
+    </script>
+    <!-- Appointment Submission Script -->
+    <script>
+    document.getElementById('submitAppointment').addEventListener('click', async function (event) {
+        event.preventDefault();
+
+        // Collect data from the form
+        const appointmentData = {
+            userId: document.getElementById('userId').value,
+            doctorId: document.getElementById('doctorId').value,
+            appointmentDate: document.getElementById('appointmentDate').value,
+            appointmentType: document.getElementById('appointmentType').value,
+            notes: document.getElementById('notes').value
+        };
+
+        try {
+            // Send the appointment data to the backend
+            const response = await fetch('https://localhost:7123/api/Appointments', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(appointmentData)
+            });
+
+            if (response.ok) {
+                Swal.fire('تم الحجز', 'تم حجز الموعد بنجاح.', 'success');
+            } else {
+                const errorData = await response.json();
+                Swal.fire('خطأ', `حدث خطأ أثناء الحجز: ${errorData.message}`, 'error');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            Swal.fire('خطأ', 'فشل الاتصال بالخادم.', 'error');
+        }
+    });
+    </script>
+
+    <!-- External Libraries and Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

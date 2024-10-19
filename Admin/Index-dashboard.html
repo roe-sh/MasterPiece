@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Mother Care - Dashboard</title>
+
+    <!-- Custom Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Perfect Scrollbar -->
+    <link
+      type="text/css"
+      href="assets/vendor/perfect-scrollbar.css"
+      rel="stylesheet"
+    />
+
+    <!-- Material Design Icons -->
+    <link
+      type="text/css"
+      href="assets/css/material-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css" href="assets/css/fontawesome.css" rel="stylesheet" />
+
+    <!-- Preloader -->
+    <link type="text/css" href="assets/vendor/spinkit.css" rel="stylesheet" />
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet" />
+  </head>
+
+  <body class="layout-fluid">
+    <div class="preloader">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+
+    <!-- Header Layout -->
+    <div class="mdk-header-layout js-mdk-header-layout">
+      <!-- Header -->
+
+      <div id="header" data-fixed class="mdk-header js-mdk-header mb-0">
+        <div class="mdk-header__content">
+          <!-- Navbar -->
+          <nav
+            id="default-navbar"
+            class="navbar navbar-expand navbar-dark bg-primary m-0"
+          >
+            <div class="container-fluid">
+              <!-- Toggle sidebar -->
+              <button
+                class="navbar-toggler d-block"
+                data-toggle="sidebar"
+                type="button"
+              >
+                <span class="material-icons">menu</span>
+              </button>
+
+              <!-- Brand -->
+              <a href="mothercare-dashboard.html" class="navbar-brand">
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Mother Care"
+                  class="mr-2"
+                  style="width: 30px"
+                />
+                <span class="d-none d-xs-md-block">Love Seed</span>
+              </a>
+
+              <!-- Search -->
+              <form class="search-form d-none d-md-flex">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search maternal health records..."
+                />
+                <button class="btn" type="button">
+                  <i class="material-icons font-size-24pt">search</i>
+                </button>
+              </form>
+
+              <div class="flex"></div>
+
+              <!-- User dropdown -->
+              <ul class="nav navbar-nav flex-nowrap">
+                <li class="nav-item dropdown ml-1 ml-md-3">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    ><img
+                      src="assets/images/people/50/user.png"
+                      alt="Avatar"
+                      class="rounded-circle"
+                      width="40"
+                    /></a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="mothercare-account-edit.html">
+                      <i class="material-icons">edit</i> Edit Account
+                    </a>
+                    <a class="dropdown-item" href="mothercare-profile.html">
+                      <i class="material-icons">person</i> Public Profile
+                    </a>
+                    <a class="dropdown-item" href="guest-login.html">
+                      <i class="material-icons">lock</i> Logout
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- // END Navbar -->
+        </div>
+      </div>
+
+      <!-- // END Header -->
+
+      <!-- Header Layout Content -->
+      <div class="mdk-header-layout__content">
+        <div
+          data-push
+          data-responsive-width="992px"
+          class="mdk-drawer-layout js-mdk-drawer-layout"
+        >
+          <div class="mdk-drawer-layout__content page">
+            <div class="container-fluid page__container">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="mothercare-dashboard.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active">Dashboard</li>
+              </ol>
+              <h1 class="h2">Mother Care Dashboard</h1>
+
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="media align-items-center">
+                        <div class="media-body">
+                          <h4 class="card-title">Upcoming Appointments</h4>
+                        </div>
+                        <div class="media-right">
+                          <a class="btn btn-sm btn-primary" href="appointments.html">View All</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <ul class="list-group list-group-fit mb-0" id="appointmentsList">
+                      <!-- Dynamic appointment data will be inserted here -->
+                    </ul>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="media align-items-center">
+                        <div class="media-body">
+                          <h4 class="card-title">Health Tips</h4>
+                          <p class="card-subtitle">Pregnancy & Motherhood</p>
+                        </div>
+                        <div class="media-right">
+                          <a class="btn btn-sm btn-primary" href="health-tips.html">View Tips</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <ul class="list-group list-group-fit mb-0" id="healthTipsList">
+                      <!-- Dynamic health tips data will be inserted here -->
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-lg-5">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="media align-items-center">
+                        <div class="media-body">
+                          <h4 class="card-title">Consulting Doctors</h4>
+                        </div>
+                        <div class="media-right">
+                          <a class="btn btn-sm btn-primary" href="doctors-list.html">View All</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <ul id="doctorsList" class="list-group list-group-fit">
+                      <!-- Dynamic doctors data will be inserted here -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
+            <div class="mdk-drawer__content">
+              <div
+                class="sidebar sidebar-left sidebar-dark bg-dark o-hidden"
+                data-perfect-scrollbar
+              >
+                <div class="sidebar-p-y">
+                  <div class="sidebar-heading">Dashboard</div>
+                  <ul class="sidebar-menu sm-active-button-bg">
+                    <li class="sidebar-menu-item active">
+                      <a class="sidebar-menu-button" href="mothercare-dashboard.html">
+                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>
+                        General
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div class="sidebar-heading">Resources</div>
+                  <ul class="sidebar-menu">
+                    <li class="sidebar-menu-item">
+                      <a class="sidebar-menu-button" href="appointments.html">
+                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">calendar_today</i>
+                        Appointments
+                      </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                      <a class="sidebar-menu-button" href="mothercare-health-tips.html">
+                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">favorite</i>
+                        Health Tips
+                      </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                      <a class="sidebar-menu-button" href="mothercare-doctors-list.html">
+                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">group</i>
+                        Doctors
+                      </a>
+                    </li>
+                  
+                  <ul class="sidebar-menu">
+                    <li class="sidebar-menu-item">
+                        <a class="sidebar-menu-button" href="categories.html">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">category</i>
+                            Categories
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a class="sidebar-menu-button" href="products.html">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">shopping_cart</i>
+                            Products
+                        </a>
+                    </li>
+                </ul>
+                
+                  <div class="sidebar-heading">Account</div>
+                  <ul class="sidebar-menu">
+                    <li class="sidebar-menu-item">
+                      <a class="sidebar-menu-button" href="mothercare-account-edit.html">
+                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">person_outline</i>
+                        Edit Account
+                      </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                      <a class="sidebar-menu-button" href="guest-login.html">
+                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">lock</i>
+                        Logout
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Settings FAB -->
+        <div id="app-settings">
+          <app-settings
+            layout-active="default"
+            :layout-location="{
+              'fixed': 'fixed-mothercare-dashboard.html',
+              'default': 'mothercare-dashboard.html'
+            }"
+            sidebar-variant="bg-transparent border-0"
+          ></app-settings>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="assets/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- MDK -->
+    <script src="assets/vendor/dom-factory.js"></script>
+    <script src="assets/vendor/material-design-kit.js"></script>
+
+    <!-- App JS -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Moment.js -->
+    <script src="assets/vendor/moment.min.js"></script>
+
+    <!-- Fetch Data (for dynamic sections) -->
+    <script>
+      // Fetch appointments data
+      fetch('https://localhost:44303/api/Appointments') // Replace with actual API
+        .then((response) => response.json())
+        .then((data) => {
+          const appointmentsList = document.getElementById('appointmentsList');
+          data.forEach((appointment) => {
+            const listItem = document.createElement('li');
+            listItem.className = 'list-group-item';
+            listItem.textContent = `Appointment with Dr. ${appointment.doctorName} on ${appointment.date}`;
+            appointmentsList.appendChild(listItem);
+          });
+        });
+
+      // Fetch health tips data
+      fetch('https://localhost:44303/api/HealthTips') // Replace with actual API
+        .then((response) => response.json())
+        .then((data) => {
+          const healthTipsList = document.getElementById('healthTipsList');
+          data.forEach((tip) => {
+            const listItem = document.createElement('li');
+            listItem.className = 'list-group-item';
+            listItem.textContent = `${tip.title}: ${tip.description}`;
+            healthTipsList.appendChild(listItem);
+          });
+        });
+
+      // Fetch doctors data
+      fetch('https://localhost:44303/api/Doctors') // Replace with actual API
+        .then((response) => response.json())
+        .then((data) => {
+          const doctorsList = document.getElementById('doctorsList');
+          data.forEach((doctor) => {
+            const listItem = document.createElement('li');
+            listItem.className = 'list-group-item';
+            listItem.textContent = `Dr. ${doctor.name} - ${doctor.specialty}`;
+            doctorsList.appendChild(listItem);
+          });
+        });
+    </script>
+  </body>
+</html>

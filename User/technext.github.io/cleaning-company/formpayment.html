@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>الملف الشخصي</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="Index2.html">بذرة <span>حب</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span> قائمة
+          </button>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">الصفحة الرئيسية</a></li>
+                <li class="nav-item"><a href="shop2.html" class="nav-link">المتجر</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">الخدمات</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">الأخبار</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">عنا</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+       
+            
+            
+              
+              <!-- أيقونة الصفحة الشخصية -->
+              <li class="nav-item">
+                <a href="profile.html" class="nav-link">
+                  <span class="fa fa-user"></span> 
+                </a>
+              </li>
+              
+              <!-- أيقونة سلة المشتريات -->
+              <li class="nav-item">
+                <a href="cart.html" class="nav-link">
+                  <span class="fa fa-shopping-cart"></span> 
+                </a>
+              </li>
+      
+              <!-- زر تسجيل الخروج -->
+             
+            </ul>
+            <li class="nav-item">
+                <a href="index.html" class="btn btn-danger nav-link text-white" style="margin-left: 10px;">تسجيل الخروج</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+      
+    <!-- Hero Section -->
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/momandbabyborn.jpg');" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-end">
+                <div class="col-md-9 ftco-animate pb-5">
+                    <p class="breadcrumbs mb-2">
+                        <span class="mr-2"><a href="index.html">الصفحة الرئيسية <i class="fa fa-chevron-right"></i></a></span>
+                        <span>الاشتراكات وورشات العمل<i class="fa fa-chevron-right"></i></span>
+                    </p>
+                    <h1 class="mb-0 bread">اشترك الان</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+<!-- Workshop Subscription Form with Payment -->
+<section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header text-center">
+            <h3>اشترك في ورشة العمل المدفوعة</h3>
+            <p>سجل الآن لحضور ورشات العمل المدفوعة الخاصة بصحة الأم والطفل.</p>
+          </div>
+          <div class="card-body">
+            <form id="workshopForm">
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="name">الاسم الكامل</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="أدخل اسمك الكامل"
+                  required
+                />
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="أدخل بريدك الإلكتروني"
+                  required
+                />
+              </div>
+
+              <!-- Phone Number Field -->
+              <div class="form-group">
+                <label for="phone">رقم الهاتف</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="أدخل رقم هاتفك"
+                  required
+                />
+              </div>
+
+              <!-- Workshop Selection Field -->
+              <div class="form-group">
+                <label for="workshop">اختر ورشة العمل</label>
+                <select class="form-control" id="workshop" required>
+                  <option value="">اختر الورشة</option>
+                  <option value="1">ورشة تغذية الأم - 50$</option>
+                  <option value="2">ورشة رعاية الطفل - 40$</option>
+                  <option value="3">ورشة الصحة النفسية - 60$</option>
+                  <option value="4">ورشة العناية بعد الولادة - 70$</option>
+                </select>
+              </div>
+
+              <!-- Payment Method Selection -->
+              <div class="form-group">
+                <label for="paymentMethod">اختر طريقة الدفع</label>
+                <select class="form-control" id="paymentMethod" required>
+                  <option value="">اختر طريقة الدفع</option>
+                  <option value="credit_card">بطاقة ائتمان</option>
+                  <option value="paypal">باي بال</option>
+                  <option value="bank_transfer">تحويل بنكي</option>
+                </select>
+              </div>
+
+              <!-- Credit Card Fields (shown if "credit_card" is selected) -->
+              <div id="creditCardFields" style="display: none;">
+                <div class="form-group">
+                  <label for="cardNumber">رقم البطاقة</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cardNumber"
+                    placeholder="أدخل رقم بطاقتك الائتمانية"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="cardExpiry">تاريخ انتهاء البطاقة</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cardExpiry"
+                    placeholder="MM/YY"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="cardCVV">رمز الأمان (CVV)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cardCVV"
+                    placeholder="أدخل رمز الأمان"
+                  />
+                </div>
+              </div>
+
+              <!-- Subscription Button -->
+              <button type="submit" class="btn btn-primary btn-block">
+                اشترك الآن
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript for Payment Method and Form Submission -->
+<script>
+
+  const paymentMethod = document.getElementById('paymentMethod');
+  const creditCardFields = document.getElementById('creditCardFields');
+
+  paymentMethod.addEventListener('change', function () {
+    if (this.value === 'credit_card') {
+      creditCardFields.style.display = 'block';
+    } else {
+      creditCardFields.style.display = 'none';
+    }
+  });
+
+  // Handle form submission
+  document.getElementById('workshopForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    // Gather form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const workshopId = document.getElementById('workshop').value;
+    const paymentMethod = document.getElementById('paymentMethod').value;
+
+    // Optional: Gather credit card details if payment method is credit card
+    let cardDetails = {};
+    if (paymentMethod === 'credit_card') {
+      cardDetails = {
+        cardNumber: document.getElementById('cardNumber').value,
+        cardExpiry: document.getElementById('cardExpiry').value,
+        cardCVV: document.getElementById('cardCVV').value,
+      };
+    }
+
+    try {
+      const response = await fetch(`https://localhost:7123/api/Workshops/${workshopId}/Register`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          userId: 1,
+          workshopId: workshopId
+        })
+      });
+
+      if (response.ok) {
+        alert('تم التسجيل بنجاح في الورشة!');
+      } else {
+        alert('حدث خطأ أثناء التسجيل. حاول مرة أخرى.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('حدث خطأ أثناء الاتصال بالخادم.');
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+    <footer class="footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+			  <h2 class="footer-heading">بذرة حب</h2>
+			  <p>
+			   موقع الكتروني اردني لدعم صحة الأم والطفل .
+			  </p>
+			  <ul
+				class="ftco-footer-social list-unstyled float-md-left float-lft mt-4"
+			  >
+				<li class="ftco-animate">
+				  <a href="#"><span class="fa fa-twitter"></span></a>
+				</li>
+				<li class="ftco-animate">
+				  <a href="#"><span class="fa fa-facebook"></span></a>
+				</li>
+				<li class="ftco-animate">
+				  <a href="#"><span class="fa fa-instagram"></span></a>
+				</li>
+			  </ul>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+			  <h2 class="footer-heading">اخر الاخبار</h2>
+			  <div class="block-21 mb-4 d-flex">
+				<a
+				  class="img mr-4 rounded"
+				  style="background-image: url(images/image_1.jpg)"
+				></a>
+				<div class="text">
+				  <h3 class="heading">
+					<a href="#"
+					  >دور الرضاعة الطبيعية في تعزيز مناعة الطفل</a
+					>
+				  </h3>
+				  <div class="meta">
+					<div>
+					  <a href="#"
+						><span class="icon-calendar"></span> Mar. 04, 2024</a
+					  >
+					</div>
+					<div>
+					  <a href="#"><span class="icon-person"></span> Admin</a>
+					</div>
+					<div>
+					  <a href="#"><span class="icon-chat"></span> 19</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="block-21 mb-4 d-flex">
+				<a
+				  class="img mr-4 rounded"
+				  style="background-image: url(images/image_2.jpg)"
+				></a>
+				<div class="text">
+				  <h3 class="heading">
+					<a href="#"
+					  >سكر الحمل والوزن الزائد</a
+					>
+				  </h3>
+				  <div class="meta">
+					<div>
+					  <a href="#"
+						><span class="icon-calendar"></span> Mar. 04, 2020</a
+					  >
+					</div>
+					<div>
+					  <a href="#"><span class="icon-person"></span> Admin</a>
+					</div>
+					<div>
+					  <a href="#"><span class="icon-chat"></span> 19</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+			  <h2 class="footer-heading">روابط سريعة</h2>
+			  <ul class="list-unstyled">
+				<li><a href="#" class="py-1 d-block">الصفحة الرئيسية</a></li>
+				<li><a href="#" class="py-1 d-block">عنا</a></li>
+				<li><a href="#" class="py-1 d-block">الخدمات</a></li>
+				<li><a href="#" class="py-1 d-block">المتجر</a></li>
+				<li><a href="#" class="py-1 d-block">الاخبار والمقالات</a></li>
+				<li><a href="#" class="py-1 d-block">تواصل معنا</a></li>
+			  </ul>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+			  <h2 class="footer-heading">هل لديك أي سؤال؟</h2>
+			  <div class="block-23 mb-3">
+				<ul>
+				  <li>
+					<span class="icon fa fa-map-marker"></span
+					><span class="text"
+					  >
+					 </span
+					>
+				  </li>
+				  <li>
+					<a href="#"
+					  ><span class="icon fa fa-phone"></span
+					  ><span class="text">+2 392 3929 210</span></a
+					>
+				  </li>
+				  <li>
+					<a href="#"
+					  ><span class="icon fa fa-paper-plane"></span
+					  ><span class="text">info@yourdomain.com</span></a
+					>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		 
+	  </footer>
+  
+	  <!-- loader -->
+	  <div id="ftco-loader" class="show fullscreen">
+		<svg class="circular" width="48px" height="48px">
+		  <circle
+			class="path-bg"
+			cx="24"
+			cy="24"
+			r="22"
+			fill="none"
+			stroke-width="4"
+			stroke="#eeeeee"
+		  />
+		  <circle
+			class="path"
+			cx="24"
+			cy="24"
+			r="22"
+			fill="none"
+			stroke-width="4"
+			stroke-miterlimit="10"
+			stroke="#F96D00"
+		  />
+		</svg>
+	  </div>
+   <!-- FontAwesome CDN (ensure you have this in your <head> or <body>) -->
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	
+	  <script src="js/jquery.min.js"></script>
+	  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+	  <script src="js/popper.min.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	  <script src="js/jquery.easing.1.3.js"></script>
+	  <script src="js/jquery.waypoints.min.js"></script>
+	  <script src="js/jquery.stellar.min.js"></script>
+	  <script src="js/jquery.animateNumber.min.js"></script>
+	  <script src="js/owl.carousel.min.js"></script>
+	  <script src="js/jquery.magnific-popup.min.js"></script>
+	  <script src="js/scrollax.min.js"></script>
+	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+	  <script src="js/google-map.js"></script>
+	  <script src="js/main.js"></script>
+	</body>
+  
+	<!-- Mirrored from technext.github.io/cleaning-company/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Sep 2024 18:47:44 GMT -->
+  </html>
+  
